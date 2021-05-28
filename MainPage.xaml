@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="Nhom1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Nhom1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="4*" />
+        </Grid.ColumnDefinitions>
+        <SplitView x:Name="sidebar" DisplayMode="CompactOverlay" HorizontalAlignment="Left" Grid.Column="0"
+                   IsPaneOpen="true" OpenPaneLength="300" CompactPaneLength="40"   >
+            <SplitView.Pane>
+                <StackPanel >
+                    <ScrollViewer >
+                    <RelativePanel >
+                    <AppBarButton x:Name="appbarButton" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Icon="List"
+                              HorizontalAlignment="left" VerticalAlignment="Top" Click="AppBarButton_Click"  Width="40" Height="40"  >
+                        <FontIcon VerticalAlignment="center"  HorizontalAlignment="left" FontFamily="Segoe MDL2 Assets" Glyph="&#xE847;"  />
+                    </AppBarButton>
+                            <TextBlock  x:Name="homeText" RelativePanel.RightOf="appbarButton" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="9" FontSize="20">Home</TextBlock>
+                            <TextBlock x:Name="eatIntText" RelativePanel.RightOf="eatInButton" RelativePanel.Below="homeText"  HorizontalAlignment="Right" VerticalAlignment="Bottom"  Margin="16 ,20,0,0"  FontSize="20">Eat -In</TextBlock>
+                            <TextBlock  x:Name="collectionText"  RelativePanel.RightOf="collectionButton" RelativePanel.Below="eatIntText"  HorizontalAlignment="Right" VerticalAlignment="Bottom"  Margin="16 ,25,0,0"  FontSize="20">Collection</TextBlock>
+                            <TextBlock x:Name="deliText" RelativePanel.RightOf="deliveryButton" RelativePanel.Below="collectionText"  HorizontalAlignment="Right" VerticalAlignment="Bottom"  Margin="16 ,25,0,0"  FontSize="20">Delivery</TextBlock>
+                            <TextBlock x:Name="takeAwayText" RelativePanel.RightOf="takeAwayButton" RelativePanel.Below="deliText"  HorizontalAlignment="Right" VerticalAlignment="Bottom"  Margin="16 ,25,0,0"  FontSize="20">Take Away</TextBlock>
+                            <TextBlock x:Name="driveText" RelativePanel.RightOf="driverPayment" RelativePanel.Below="takeAwayButton"  HorizontalAlignment="Right" VerticalAlignment="Bottom"  Margin="16 ,25,0,0"  FontSize="20">Driver Payment</TextBlock>
+                            <TextBlock x:Name="customerText" RelativePanel.RightOf="Customer" RelativePanel.Below="driveText"  HorizontalAlignment="Right" VerticalAlignment="Bottom"  Margin="16 ,25,0,0"  FontSize="20">Customer</TextBlock>
+
+                            <SymbolIcon Symbol="Shop" RelativePanel.Below="appbarButton"  x:Name="eatInButton" Margin="10 ,30,0,0" />
+
+                            <SymbolIcon Symbol="Shuffle" RelativePanel.Below="eatInButton" x:Name="collectionButton" Margin="10,30,0,0" />
+                            <SymbolIcon Symbol="Audio" RelativePanel.Below="collectionButton" x:Name="deliveryButton" Margin="10,30,0,0" />
+                            <SymbolIcon Symbol="Account" RelativePanel.Below="deliveryButton" x:Name="takeAwayButton" Margin="10,30,0,0" />
+                            <SymbolIcon Symbol="AddFriend" RelativePanel.Below="takeAwayButton" x:Name="driverPayment" Margin="10,30,0,0" />
+                            <SymbolIcon Symbol="Bullets" RelativePanel.Below="driverPayment" x:Name="Customer" Margin="10,30,0,0" />
+                        </RelativePanel>
+                       
+
+                    </ScrollViewer>
+                </StackPanel>
+            </SplitView.Pane>
+        </SplitView>
+    </Grid>
+
+
+</Page>
