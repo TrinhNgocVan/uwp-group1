@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 using System.Net;
 using System.Net.Http;
 using Newtonsoft.Json;
-
-
-namespace UWP.Services
+namespace Nhom1.Services
 {
     class MenuService
     {

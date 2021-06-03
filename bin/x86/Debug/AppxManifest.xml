@@ -7,10 +7,10 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="a3d0138e-41b7-42dc-b7c6-c630cdbbaac7" Publisher="CN=admin" Version="1.0.0.0" ProcessorArchitecture="x86" />
-  <mp:PhoneIdentity PhoneProductId="a3d0138e-41b7-42dc-b7c6-c630cdbbaac7" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="226b4872-f606-4d8d-86c6-0a93af660c71" Publisher="CN=admin" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <mp:PhoneIdentity PhoneProductId="226b4872-f606-4d8d-86c6-0a93af660c71" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>Nhom2</DisplayName>
+    <DisplayName>Nhom1</DisplayName>
     <PublisherDisplayName>admin</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -23,8 +23,8 @@
     <Resource Language="EN-US" />
   </Resources>
   <Applications>
-    <Application Id="App" Executable="Nhom2.exe" EntryPoint="Nhom2.App">
-      <uap:VisualElements DisplayName="Nhom2" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Nhom2" BackgroundColor="transparent">
+    <Application Id="App" Executable="Nhom1.exe" EntryPoint="Nhom1.App">
+      <uap:VisualElements DisplayName="Nhom1" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Nhom1" BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
@@ -47,7 +47,7 @@
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2019" />
     <build:Item Name="OperatingSystem" Version="10.0.19041.1 (WinBuild.160101.0800)" />
     <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="16.0.31228.383" />
-    <build:Item Name="ProjectGUID" Value="{E46FCC90-F027-4956-94C1-26003845BAB9}" />
+    <build:Item Name="ProjectGUID" Value="{E32282A6-526A-4708-8F9C-0788274C2E53}" />
     <build:Item Name="OptimizingToolset" Value="None" />
     <build:Item Name="TargetRuntime" Value="Managed" />
     <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="10.0.19041.685" />

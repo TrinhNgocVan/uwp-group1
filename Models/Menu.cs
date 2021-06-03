@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nhom2.Models
+namespace Nhom1
+    .Models
 {
     class Menu
     {

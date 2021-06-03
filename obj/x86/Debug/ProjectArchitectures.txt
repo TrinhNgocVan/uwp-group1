@@ -1,1 +1,1 @@
-C:\Users\admin\Desktop\Nhom2\Nhom2.csproj;x86
+C:\Users\admin\Desktop\Nhom1\Nhom1.csproj;x86

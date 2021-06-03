@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nhom2.Adapters
+namespace Nhom1.Adapters
 {
     class Adaper
     {
@@ -29,7 +29,11 @@ namespace Nhom2.Adapters
 
         public string GetMenuApi
         {
-            get => String.Format(baseURL + "/api/menu");
+            get => String.Format(baseURL + "/api/today-special");
+        }
+        public string getCategoryApi
+        {
+            get => String.Format(baseURL+ "/api/category/");
         }
     }
 }

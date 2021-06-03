@@ -1,19 +1,19 @@
 ﻿<Page
-    x:Class="Nhom2.Pages.Layout"
+    x:Class="Nhom1.Pages.Layout"
+    xmlns:models="using:Nhom1.Models"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Nhom2.Pages"
-    xmlns:models="using:Nhom2.Models"
+    xmlns:local="using:Nhom1.Pages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <SplitView OpenPaneLength="200" DisplayMode="Inline" IsPaneOpen="True">
         <SplitView.Pane>
-            <ListView x:Name="MN" Margin="10" Loaded="MN_Loaded">
+            <ListView x:Name="MN" Margin="10" Loaded="Menu_Loaded">
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="models:MenuItem">
-                        <ListViewItem Tapped="ListViewItem_Tapped" >
+                        <ListViewItem Tapped="ListViewItem_Tapped">
                             <TextBlock Text="{x:Bind Name}"/>
                         </ListViewItem>
                     </DataTemplate>
@@ -26,5 +26,4 @@
             </ScrollViewer>
         </SplitView.Content>
     </SplitView>
-
 </Page>

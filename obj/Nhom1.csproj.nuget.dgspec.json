@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\Desktop\\Nhom2\\Nhom2.csproj": {}
+    "C:\\Users\\admin\\Desktop\\Nhom1\\Nhom1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\Desktop\\Nhom2\\Nhom2.csproj": {
+    "C:\\Users\\admin\\Desktop\\Nhom1\\Nhom1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Desktop\\Nhom2\\Nhom2.csproj",
-        "projectName": "Nhom2",
-        "projectPath": "C:\\Users\\admin\\Desktop\\Nhom2\\Nhom2.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Desktop\\Nhom1\\Nhom1.csproj",
+        "projectName": "Nhom1",
+        "projectPath": "C:\\Users\\admin\\Desktop\\Nhom1\\Nhom1.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Desktop\\Nhom2\\obj\\",
+        "outputPath": "C:\\Users\\admin\\Desktop\\Nhom1\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -45,7 +45,7 @@
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[12.0.3, )"
+              "version": "[13.0.1, )"
             }
           },
           "imports": [

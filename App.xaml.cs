@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace Nhom2
+namespace Nhom1
 {
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
@@ -66,7 +66,7 @@ namespace Nhom2
                     // When the navigation stack isn't restored navigate to the first page,
                     // configuring the new page by passing required information as a navigation
                     // parameter
-                    rootFrame.Navigate(typeof(Pages.DemoFetchApi), e.Arguments);
+                    rootFrame.Navigate(typeof(Pages.Layout), e.Arguments);
                 }
                 // Ensure the current window is active
                 Window.Current.Activate();
