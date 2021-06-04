@@ -35,5 +35,9 @@ namespace Nhom1.Adapters
         {
             get => String.Format(baseURL+ "/api/category/");
         }
+        public string getFoodDetailApi
+        {
+            get => String.Format(baseURL + "/api/food/");
+        }
     }
 }

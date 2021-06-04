@@ -44,8 +44,8 @@ namespace Nhom1.Pages
             switch (item.MenuPage)
             {
                 case "Home": MainFrame.Navigate(typeof(Pages.Home), "Day la trang chu "); break;
-                case "Category": MainFrame.Navigate(typeof(Pages.EatIn) , "Day la EatIn"); break;
-                case "Collection": MainFrame.Navigate(typeof(Pages.Collection), "Day la Collection"); break;
+                case "Category": MainFrame.Navigate(typeof(Pages.EatIn)); break;
+                case "Collection": MainFrame.Navigate(typeof(Pages.Collection),"1"); break;
                 case "Delivery": MainFrame.Navigate(typeof(Pages.Delivery), "Day la Delivery "); break;
                 case "TakeAway": MainFrame.Navigate(typeof(Pages.TakeAway), "Day la TakeAway "); break;
                 case "DriverPayment": MainFrame.Navigate(typeof(Pages.DriverPayment), "Day la DriverPayment "); break;

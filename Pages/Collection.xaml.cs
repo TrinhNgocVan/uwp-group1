@@ -12,6 +12,11 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Nhom1.Models;
+using System.Net;
+using System.Net.Http;
+using Newtonsoft.Json;
+using Nhom1.Services;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -25,11 +30,30 @@ namespace Nhom1.Pages
         public Collection()
         {
             this.InitializeComponent();
+        
+
         }
-        protected async override void OnNavigatedTo(NavigationEventArgs e)
+        protected  override void OnNavigatedTo(NavigationEventArgs e)
         {
-            string msg = e.Parameter as string;
-            Title.Text = msg;
+          
+            String foodIdString = e.Parameter as String ;
+            Console.WriteLine("foodId : " + foodIdString);
+            if (foodIdString != null) {
+                int foodId = int.Parse(foodIdString);
+                 getFoodDetail(foodId);
+            }
+            
+
+
+         }
+        public async void getFoodDetail(int id)
+        {
+            List<Food> lsFoods = new List<Food>();
+            DetailService service = new DetailService();
+            FoodDetail food = await service.getFoodDetail(id);
+            lsFoods.Add(food.data);
+            MNItems.ItemsSource = lsFoods;
+          
         }
     }
 }
