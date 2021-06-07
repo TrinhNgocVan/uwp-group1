@@ -1,1 +1,1 @@
-C:\Users\admin\Desktop\Nhom1\Nhom1.csproj;x86
+F:\FPT\2nd\Sem 3\WFP\uwp-group1\Nhom1.csproj;x86

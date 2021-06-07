@@ -10,11 +10,11 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <SplitView OpenPaneLength="200" DisplayMode="Inline" IsPaneOpen="True">
         <SplitView.Pane>
-            <ListView x:Name="MN" Margin="10" Loaded="Menu_Loaded">
+            <ListView x:Name="MN" Loaded="Menu_Loaded" Background="#FF1D1C1C">
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="models:MenuItem">
                         <ListViewItem Tapped="ListViewItem_Tapped">
-                            <TextBlock Text="{x:Bind Name}"/>
+                            <TextBlock Text="{x:Bind Name}" Foreground="White" Margin="0,20,0,20"/>
                         </ListViewItem>
                     </DataTemplate>
                 </ListView.ItemTemplate>

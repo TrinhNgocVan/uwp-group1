@@ -9,6 +9,40 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid Margin="0,0,0,798">
+            <RelativePanel Margin="0,0,0,150" Background="#FFEA2C2C"/>
+            <RelativePanel Margin="108,0,1261,0" Background="#FFEA2C2C"/>
+            <Image x:Name="logo1" HorizontalAlignment="Left" Height="100" Margin="128,22,0,0" VerticalAlignment="Top" Width="87" FocusVisualPrimaryBrush="#FFFF2D2D" Source="/Assets/logoFF.jpg" FocusVisualSecondaryBrush="#99EE2020"/>
+            <TextBlock x:Name="ResName" HorizontalAlignment="Left" Margin="117,125,0,0" Text="Fast Food" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="ResName_SelectionChanged" FontSize="24" FontWeight="Bold" FontFamily="Century Gothic" AllowDrop="True" Width="117" Height="29"/>
+            <TextBlock HorizontalAlignment="Left" Margin="117,152,0,0" Text="Restaurant" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Width="119" Height="32"/>
+            <TextBlock x:Name="Head" HorizontalAlignment="Left" Margin="244,44,0,0" Text="C# UI Designing by Group 1" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" FontFamily="Century Gothic" Width="484" Height="44"/>
+            <AppBarButton x:Name="FacebookButton" Label="" Margin="747,44,0,0" RenderTransformOrigin="-0.128,0.364" Height="44" Width="39" Background="#00000000">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="/Assets/facebook_64px.png" Height="575883" Width="909255" />
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton x:Name="FacebookButton_Copy" Label="" Margin="791,44,0,0" RenderTransformOrigin="1.412,0.285" Height="44" Width="50" Background="#00000000">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="/Assets/twitter_24px.png"/>
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton x:Name="FacebookButton_Copy1" Label="" Margin="845,44,0,0" RenderTransformOrigin="1.412,0.285" Height="44" Width="51" Background="#00000000">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="/Assets/instagram_old_32px.png"/>
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton x:Name="FacebookButton_Copy2" Label="" Margin="953,44,0,0" RenderTransformOrigin="1.412,0.285" Height="44" Width="50" Background="White">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="/Assets/notification_64px.png"/>
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton x:Name="FacebookButton_Copy3" Label="" Margin="1013,44,0,0" RenderTransformOrigin="1.412,0.285" Height="44" Width="50" Background="#00000000" Icon="Setting"/>
+            <AppBarButton x:Name="FacebookButton_Copy4" Label="" Margin="1068,44,0,0" RenderTransformOrigin="1.412,0.285" Height="44" Width="50" Background="#00000000">
+                <AppBarButton.Icon>
+                    <BitmapIcon UriSource="/Assets/shutdown_32px.png"/>
+                </AppBarButton.Icon>
+            </AppBarButton>
+        </Grid>
         <Grid>
             <TextBlock x:Name="Title"/>
         </Grid>
