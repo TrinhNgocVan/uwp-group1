@@ -1,4 +1,6 @@
 WinMetadata\Windows.winmd
+SQLitePCL.Ext.dll
+SQLitePCL.Ext.pri
 Assets\Cake.jpg
 Assets\cheeseBurgur.jpg
 Assets\facebook_32px.png
@@ -23,6 +25,7 @@ MainPage.xbf
 Nhom1.xr.xml
 Pages\Customers.xbf
 Pages\Delivery.xbf
+Pages\DemoFileHandle.xbf
 Pages\DetailFood.xbf
 Pages\DriverPayment.xbf
 Pages\EatIn.xbf
@@ -30,3 +33,5 @@ Pages\Home.xbf
 Pages\Layout.xbf
 Pages\TakeAway.xbf
 Properties\Default.rd.xml
+sqlite3.def
+sqlite3.dll

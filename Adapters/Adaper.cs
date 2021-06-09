@@ -39,5 +39,9 @@ namespace Nhom1.Adapters
         {
             get => String.Format(baseURL + "/api/food/");
         }
+        public string GetCreateOrderApi
+        {
+            get => String.Format(baseURL + "/api/create-order");
+        }
     }
 }

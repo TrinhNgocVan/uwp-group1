@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GJxWsxO4yiOQEVc2/JPpHANEGwynxPT72l6OJSy3x4qsQhmo+DDQUDzXtAaPTd48U18NSAl/IEZ2+4Oq+G08BA==",
+  "dgSpecHash": "B1ILAW6DcKhVFoZaJDvbAMIi0hcoDrjW+rBflZEjFgP7aSAXjnJIQ9muhhYWhQIhQamLRN67dCSZJETJn5J8Xg==",
   "success": true,
   "projectFilePath": "C:\\Users\\admin\\Desktop\\Nhom1\\Nhom1.csproj",
   "expectedPackageFiles": [
@@ -27,7 +27,8 @@
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.native.compiler\\2.2.9-rel-29512-01\\runtime.win10-x86.microsoft.net.native.compiler.2.2.9-rel-29512-01.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.native.sharedlibrary\\2.2.8-rel-29512-01\\runtime.win10-x86.microsoft.net.native.sharedlibrary.2.2.8-rel-29512-01.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\\2.2.11\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.2.11.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.11\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.11.nupkg.sha512"
+    "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.11\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.11.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\sqlitepcl\\3.8.7.2\\sqlitepcl.3.8.7.2.nupkg.sha512"
   ],
   "logs": []
 }
