@@ -115,8 +115,8 @@
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Nhom1\bin\x86\Debug\Pages\EatIn.xbf">
       <PackagePath>Pages\EatIn.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\admin\Desktop\Nhom1\bin\x86\Debug\Pages\Collection.xbf">
-      <PackagePath>Pages\Collection.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\admin\Desktop\Nhom1\bin\x86\Debug\Pages\DetailFood.xbf">
+      <PackagePath>Pages\DetailFood.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\Desktop\Nhom1\bin\x86\Debug\Pages\Customers.xbf">
       <PackagePath>Pages\Customers.xbf</PackagePath>

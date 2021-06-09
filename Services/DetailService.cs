@@ -18,7 +18,7 @@ namespace Nhom1.Services
             // lay data tu api va nap vao MNItems
             HttpClient httpClient = new HttpClient();// day la shipper lay hang 
                                                      //  var response = await httpClient.GetAsync(_adaper.getFoodDetailApi + id); // file_get_content(); // CURL 
-            var response = await httpClient.GetAsync(" https://foodgroup.herokuapp.com/api/food/1");
+            var response = await httpClient.GetAsync(" https://foodgroup.herokuapp.com/api/food/"+id);
        
            if (response.StatusCode == HttpStatusCode.OK)
             {

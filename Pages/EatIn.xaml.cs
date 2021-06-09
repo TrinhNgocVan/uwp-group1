@@ -52,12 +52,12 @@ namespace Nhom1.Pages
             string msg = e.Parameter as string;
             // Title.Text = msg;
         }
-      
-        private void RelativePanel_Tapped(object sender, TappedRoutedEventArgs e)
+
+        private void ListViewItem_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            
-
-
+            var foodId = (int)  ((ListViewItem)sender).Tag ;
+            System.Diagnostics.Debug.WriteLine("foodId :"+foodId);
+            Layout.staticFrame.Navigate(typeof(Pages.Collection), foodId);
         }
     }
 

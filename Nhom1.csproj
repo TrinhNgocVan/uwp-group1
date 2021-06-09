@@ -131,8 +131,8 @@
     <Compile Include="Pages\EatIn.xaml.cs">
       <DependentUpon>EatIn.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Collection.xaml.cs">
-      <DependentUpon>Collection.xaml</DependentUpon>
+    <Compile Include="Pages\DetailFood.xaml.cs">
+      <DependentUpon>DetailFood.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Customers.xaml.cs">
       <DependentUpon>Customers.xaml</DependentUpon>
@@ -198,7 +198,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Pages\Collection.xaml">
+    <Page Include="Pages\DetailFood.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

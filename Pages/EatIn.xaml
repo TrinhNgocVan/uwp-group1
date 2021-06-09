@@ -9,13 +9,13 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <StackPanel >
-        <Grid Height="264">
+        <Grid Height="150">
             <RelativePanel x:Name="header"  Margin="5,-9,4,687" Background="White" Grid.ColumnSpan="2" Grid.Column="1"/>
             <RelativePanel Margin="45,10,881,734" Background="#FFEA2C2C" FocusVisualPrimaryBrush="#FFEC0C0C"/>
             <Image x:Name="logo1" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="65,22,0,0" VerticalAlignment="Top" Width="87" FocusVisualPrimaryBrush="#FFFF2D2D" Source="/Assets/logoFF.jpg" FocusVisualSecondaryBrush="#99EE2020" Grid.ColumnSpan="2"/>
             <TextBlock x:Name="ResName" Grid.Column="1" HorizontalAlignment="Left" Margin="54,125,0,0" Text="Fast Food" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top"  FontSize="24" FontWeight="Bold" FontFamily="Century Gothic" AllowDrop="True" Width="117" Grid.ColumnSpan="2" Height="29"/>
             <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="54,152,0,0" Text="Restaurant" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Width="119"  Grid.ColumnSpan="2" Height="32"/>
-            <TextBlock x:Name="Head"  Grid.Column="2" HorizontalAlignment="Left" Margin="92,39,0,0" Text="C# UI Designing by Group 1" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" FontFamily="Century Gothic" Width="484" Height="44"/>
+            <TextBlock x:Name="Head"  Grid.Column="2" HorizontalAlignment="Left" Margin="200,39,0,0" Text="Category" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" FontFamily="Century Gothic" Width="484" Height="44"/>
             <AppBarButton x:Name="FacebookButton" Grid.Column="2" Label="" Margin="604,39,0,0" RenderTransformOrigin="1.412,0.285" Height="44" Width="39" Background="#00000000">
                 <AppBarButton.Icon>
                     <BitmapIcon UriSource="/Assets/facebook_64px.png" Height="575883" Width="909255" />
@@ -46,22 +46,25 @@
         <ListView x:Name="MNItems">
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="models:CategoryData">
-                    <ListViewItem  Tapped="RelativePanel_Tapped"  >
+                    <ListViewItem   >
 
                         <RelativePanel >
-                            <Image x:Name="imgIcon" Source="{x:Bind category.icon}" Width="50" Height="50" Margin="10"/>
-                            <TextBlock RelativePanel.RightOf="imgIcon" Margin="0,20,0,0" Text="{x:Bind category.name}" FontSize="24"/>
+                           
+                            <Image x:Name="imgIcon" Source="{x:Bind category.icon}" Width="150" Height="150" Margin="50 ,0,0,10"/>
+                            <TextBlock RelativePanel.RightOf="imgIcon" Margin="50,20,0,0" Text="{x:Bind category.name}" FontSize="60"/>
+                              
                             <ListView x:Name="DetailItems" RelativePanel.Below="imgIcon" ItemsSource="{x:Bind foods}" Visibility="Visible" 
                                       ScrollViewer.VerticalScrollBarVisibility="Disabled"  ScrollViewer.HorizontalScrollBarVisibility="Auto"  >
                                 <ListView.ItemTemplate >
 
-                                    <DataTemplate x:DataType="models:Food">
-                                        <ListViewItem  ScrollViewer.HorizontalScrollMode="Enabled"   >
+                                    <DataTemplate x:DataType="models:Food" >
+                                        <ListViewItem  ScrollViewer.HorizontalScrollMode="Enabled" HorizontalContentAlignment="Center" Tag="{x:Bind id}" Tapped="ListViewItem_Tapped"   >
                                             <RelativePanel  >
-                                                <Image x:Name="imgIcon" Source="{x:Bind image}" Width="50" Height="50" Margin="10"/>
-                                                <TextBlock RelativePanel.Below="imgIcon" Margin="0,20,0,0" Text="{x:Bind name}" FontSize="24" Width="150" TextWrapping="Wrap"/>
+                                                <TextBlock x:Name="foodId" Text="{x:Bind id}" Visibility="Collapsed"/>
+                                                <Image x:Name="imgIcon" Source="{x:Bind image}" Width="50" Height="50" Margin="70,0,0,10"/>
+                                                <TextBlock RelativePanel.RightOf="imgIcon" Margin="0,20,0,0" Text="{x:Bind name}" FontSize="24" Width="800" TextWrapping="Wrap"/>
 
-                                            </RelativePanel>
+                                            </RelativePanel >
 
                                         </ListViewItem>
                                     </DataTemplate>

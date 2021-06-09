@@ -23,6 +23,7 @@ namespace Nhom1.Pages
     /// </summary>
     public sealed partial class Layout : Page
     {
+        public static Frame staticFrame;
         public Layout()
         {
             this.InitializeComponent();
@@ -40,6 +41,7 @@ namespace Nhom1.Pages
 
         private void ListViewItem_Tapped(object sender, TappedRoutedEventArgs e)
         {
+            staticFrame = MainFrame ;
             MenuItem item = MN.SelectedItem as MenuItem;
             switch (item.MenuPage)
             {

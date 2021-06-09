@@ -11,8 +11,8 @@
   
     <Grid>
         <StackPanel>
-            <Grid Height="264">
-                <RelativePanel x:Name="header"  Margin="5,-9,4,687" Background="White" Grid.ColumnSpan="2" Grid.Column="1"/>
+            <Grid Height="200">
+                <RelativePanel x:Name="header"  Margin="5,-9,4,100" Background="White" Grid.ColumnSpan="2" Grid.Column="1"/>
                 <RelativePanel Margin="45,10,881,734" Background="#FFEA2C2C" FocusVisualPrimaryBrush="#FFEC0C0C"/>
                 <Image x:Name="logo1" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="65,22,0,0" VerticalAlignment="Top" Width="87" FocusVisualPrimaryBrush="#FFFF2D2D" Source="/Assets/logoFF.jpg" FocusVisualSecondaryBrush="#99EE2020" Grid.ColumnSpan="2"/>
                 <TextBlock x:Name="ResName" Grid.Column="1" HorizontalAlignment="Left" Margin="54,125,0,0" Text="Fast Food" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top"  FontSize="24" FontWeight="Bold" FontFamily="Century Gothic" AllowDrop="True" Width="117" Grid.ColumnSpan="2" Height="29"/>
@@ -55,9 +55,28 @@
                         <DataTemplate x:DataType="models:Food" >
                             <ListViewItem>
                                 <RelativePanel>
-                                    <TextBlock SelectionHighlightColor="Yellow" Text="{x:Bind price}" FontSize="30" />
-                                    <Image x:Name="imgIcon" Source="{x:Bind image}" Width="50" Height="50" Margin="10"/>
-                                    <TextBlock RelativePanel.RightOf="imgIcon" Margin="0,20,0,0" Text="{x:Bind name}" FontSize="24"/>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="2*" />
+                                            <ColumnDefinition Width="2*" />
+                                        </Grid.ColumnDefinitions>
+                                        <StackPanel Grid.Column="0">
+                                            <TextBlock FontSize="30" Foreground="Orange" HorizontalAlignment="Left" Text="Only" Margin="100,0,0,-20"/>
+                                            <RelativePanel>
+                                                <TextBlock x:Name="Unit" Foreground="Yellow" Text="$" FontSize="100" FontWeight="Medium" Margin="100,0,0,0" />
+                                                <TextBlock RelativePanel.RightOf="Unit" Foreground="Yellow" Text="{x:Bind price}" FontSize="100" FontWeight="Medium" Margin="0,0,0,0" />
+                                            </RelativePanel>
+                                            <TextBlock Foreground="Black" Text="{x:Bind name}" FontSize="40" Margin="100,0,0,-20"  TextWrapping="Wrap"/>
+                                            <TextBlock Foreground="Yellow" Text="{x:Bind description}" FontSize="30" />
+                                            <Button Foreground="White" Content="Order Now " FontSize="25" 
+                                                    Width="250" Margin="150 ,50,0,0"
+                                                    HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="Green"/>
+                                        </StackPanel>
+                                        <Image Grid.Column="1" x:Name="imgIcon" Source="{x:Bind image}" Width="500" Height="500" Margin="100,-50,0,0"/>
+                                    </Grid>
+                                   
+                                    
+                                 
                                 </RelativePanel>
                             </ListViewItem>
                         </DataTemplate>

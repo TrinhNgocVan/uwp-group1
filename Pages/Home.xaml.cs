@@ -34,18 +34,6 @@ namespace Nhom1.Pages
         }
         public async void GetMenu() // bao hieu rang se su dung cu phap xu ly bat dong bo hoa
         {
-            // lay data tu api va nap vao MNItems
-            //HttpClient httpClient = new HttpClient();// day la shipper lay hang 
-            //var response = await httpClient.GetAsync(""); // file_get_content(); // CURL 
-            /*  if(response.StatusCode  == HttpStatusCode.OK)
-              {
-                  var stringContent = await response.Content.ReadAsStringAsync(); // day chinh la string json // read content response
-                  // convert cai string tren thanh 1 object Menu -- php json_decode  js: JSON_parser
-                  Menu menu = JsonConvert.DeserializeObject<Menu>(stringContent);
-                  MNItems.ItemsSource = menu.data;
-              }
-  */
-            // dung MenuService
             HomeService service = new HomeService();
             HomePageRoot home = await service.GetHomePage();
             if (home != null)
@@ -61,6 +49,13 @@ namespace Nhom1.Pages
         private void ResName_SelectionChanged(object sender, RoutedEventArgs e)
         {
             
+        }
+
+        private void ListViewItem_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            var foodId = (int)((ListViewItem)sender).Tag;
+            System.Diagnostics.Debug.WriteLine("foodId :" + foodId);
+            Layout.staticFrame.Navigate(typeof(Pages.Collection), foodId);
         }
     }
 }

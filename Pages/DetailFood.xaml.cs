@@ -27,20 +27,19 @@ namespace Nhom1.Pages
     /// </summary>
     public sealed partial class Collection : Page
     {
+        Nullable<int> foodId ;
         public Collection()
         {
             this.InitializeComponent();
-        
 
         }
         protected  override void OnNavigatedTo(NavigationEventArgs e)
         {
           
-            String foodIdString = e.Parameter as String ;
-            Console.WriteLine("foodId : " + foodIdString);
-            if (foodIdString != null) {
-                int foodId = int.Parse(foodIdString);
-                 getFoodDetail(foodId);
+            foodId = e.Parameter as Nullable<int>;
+            System.Diagnostics.Debug.WriteLine("foodId in detail page : " + foodId);
+            if (foodId != null) {
+              getFoodDetail(foodId.Value);
             }
             
 
@@ -51,6 +50,7 @@ namespace Nhom1.Pages
             List<Food> lsFoods = new List<Food>();
             DetailService service = new DetailService();
             FoodDetail food = await service.getFoodDetail(id);
+            System.Diagnostics.Debug.WriteLine("foodId in service : " + food.data.id +"---"+food.data.name);
             lsFoods.Add(food.data);
             MNItems.ItemsSource = lsFoods;
           
