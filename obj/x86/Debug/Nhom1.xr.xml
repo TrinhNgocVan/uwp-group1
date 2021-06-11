@@ -114,6 +114,13 @@
     </RootType>
     <RootType FullName="Nhom1.Pages.Collection" />
     <RootType FullName="Nhom1.Pages.Customers" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Text" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
     <RootType FullName="Nhom1.Pages.Delivery" />
     <RootType FullName="Nhom1.Pages.DriverPayment" />
     <RootType FullName="Nhom1.Pages.Home" />

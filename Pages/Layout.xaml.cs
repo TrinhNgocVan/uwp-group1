@@ -33,7 +33,7 @@ namespace Nhom1.Pages
             MN.Items.Add(new MenuItem { Name = "Home", MenuPage = "Home" });
             MN.Items.Add(new MenuItem { Name = "Category", MenuPage = "Category" });
             MN.Items.Add(new MenuItem { Name = "Collection", MenuPage = "Collection" });
-            MN.Items.Add(new MenuItem { Name = "Delivery", MenuPage = "Delivery" });
+            MN.Items.Add(new MenuItem { Name = "Cart", MenuPage = "Cart" });
             MN.Items.Add(new MenuItem { Name = "TakeAway", MenuPage = "TakeAway" });
             MN.Items.Add(new MenuItem { Name = "DriverPayment", MenuPage = "DriverPayment" });
             MN.Items.Add(new MenuItem { Name = "Customers", MenuPage = "Customers" });
@@ -48,7 +48,7 @@ namespace Nhom1.Pages
                 case "Home": MainFrame.Navigate(typeof(Pages.Home), "Day la trang chu "); break;
                 case "Category": MainFrame.Navigate(typeof(Pages.EatIn)); break;
                 case "Collection": MainFrame.Navigate(typeof(Pages.Collection),"1"); break;
-                case "Delivery": MainFrame.Navigate(typeof(Pages.Delivery), "Day la Delivery "); break;
+                case "Cart": MainFrame.Navigate(typeof(Pages.Delivery), "Day la Delivery "); break;
                 case "TakeAway": MainFrame.Navigate(typeof(Pages.TakeAway), "Day la TakeAway "); break;
                 case "DriverPayment": MainFrame.Navigate(typeof(Pages.DriverPayment), "Day la DriverPayment "); break;
                 case "Customers": MainFrame.Navigate(typeof(Pages.Customers), "Day la Customers "); break;

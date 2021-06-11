@@ -124,7 +124,7 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\Cart.cs" />
+    <Compile Include="Dao\Impl\Cart.cs" />
     <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\CategoryPage.cs" />
     <Compile Include="Models\CreateOrder.cs" />
@@ -135,8 +135,8 @@
     <Compile Include="Pages\DemoFileHandle.xaml.cs">
       <DependentUpon>DemoFileHandle.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\EatIn.xaml.cs">
-      <DependentUpon>EatIn.xaml</DependentUpon>
+    <Compile Include="Pages\Category.xaml.cs">
+      <DependentUpon>Category.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\DetailFood.xaml.cs">
       <DependentUpon>DetailFood.xaml</DependentUpon>
@@ -160,7 +160,7 @@
       <DependentUpon>TakeAway.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\CartService.cs" />
+    <Compile Include="Dao\CartService.cs" />
     <Compile Include="Services\CategoryService.cs" />
     <Compile Include="Services\DetailService.cs" />
     <Compile Include="Services\FileHandleService.cs" />
@@ -210,7 +210,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\EatIn.xaml">
+    <Page Include="Pages\Category.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -254,6 +254,7 @@
       <Version>3.8.7.2</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Nhom1.Services;
+using Nhom1.Dao;
 using Nhom1.Adapters;
+using Nhom1.Models;
 using SQLitePCL;
-namespace Nhom1.Models
+namespace Nhom1.Dao.Impl
 {
     class Cart : CartService
     {
@@ -22,7 +23,7 @@ namespace Nhom1.Models
             statement.Bind(4, item.price);
             statement.Bind(5, item.qty);
             var rs = statement.Step();
-            return rs == SQLiteResult.OK;
+            return rs == SQLiteResult.OK;   
         }
 
         public List<CartItem> GetCart()
@@ -43,6 +44,32 @@ namespace Nhom1.Models
                 list.Add(c);
             }
             return list;
+        }
+        public bool checkItemExist(CartItem checkItem)
+        {
+            bool result = false;
+            List<CartItem> lsCarts = GetCart();
+            foreach(CartItem item in lsCarts)
+            {
+                if(item.id == checkItem.id)
+                {
+                    result = true; break;
+                }
+            }
+            return result;
+        }
+        public CartItem getItemById (int id)
+        {
+            List<CartItem> lsCarts = GetCart();
+            foreach (CartItem item in lsCarts)
+            {
+                if(item.id == id)
+                {
+                    return item; break;
+
+                }
+            }
+            return null;
         }
 
         public bool RemoveItem(CartItem item)

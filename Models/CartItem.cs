@@ -17,7 +17,7 @@ namespace Nhom1.Models
             this.qty = qty;
         }
 
-        public int id { get; set; } // property --> tham chieu sang id product
+        public int id { get; set; } 
         public string name { get; set; }
         public string image { get; set; }
         public int price { get; set; }

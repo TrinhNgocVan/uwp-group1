@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\Desktop\\Nhom1\\Nhom1.csproj": {}
+    "E:\\uwp-group1\\Nhom1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\Desktop\\Nhom1\\Nhom1.csproj": {
+    "E:\\uwp-group1\\Nhom1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Desktop\\Nhom1\\Nhom1.csproj",
+        "projectUniqueName": "E:\\uwp-group1\\Nhom1.csproj",
         "projectName": "Nhom1",
-        "projectPath": "C:\\Users\\admin\\Desktop\\Nhom1\\Nhom1.csproj",
+        "projectPath": "E:\\uwp-group1\\Nhom1.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Desktop\\Nhom1\\obj\\",
+        "outputPath": "E:\\uwp-group1\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

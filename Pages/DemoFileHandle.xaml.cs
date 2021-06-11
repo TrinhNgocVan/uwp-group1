@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Nhom1.Services;
 using Nhom1.Models;
+using Nhom1.Dao.Impl;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -33,9 +34,9 @@ namespace Nhom1.Pages
         }
         private async void Read_File(object sender, RoutedEventArgs e)
         {
-            OrderService os = new OrderService();
+            OrderService orderService = new OrderService();
             Cart cart = new Cart();
-            CreateOrder co = await os.CreateOrder(cart.GetCart());
+            CreateOrder co = await orderService.CreateOrder(cart.GetCart());
             // string txt = await FileHandleService.ReadFile("t2004e.txt");
             TxtBlock.Text = co.data.order_id.ToString();
         }

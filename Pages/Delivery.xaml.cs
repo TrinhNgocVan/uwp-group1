@@ -12,6 +12,9 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Nhom1.Models;
+using Nhom1.Dao.Impl;
+using Nhom1.Services;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -22,14 +25,21 @@ namespace Nhom1.Pages
     /// </summary>
     public sealed partial class Delivery : Page
     {
+        private static List<CartItem> lsCartItems;
         public Delivery()
         {
             this.InitializeComponent();
+            Cart cart = new Cart();
+            lsCartItems = cart.GetCart();
+            MNItems.ItemsSource = lsCartItems;
         }
-        protected async override void OnNavigatedTo(NavigationEventArgs e)
+
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            string msg = e.Parameter as string;
-            Title.Text = msg;
+            OrderService orderService = new OrderService();
+            Cart cart = new Cart();
+            CreateOrder co = await orderService.CreateOrder(cart.GetCart());
+            result.Text = "Order Success ";
         }
     }
 }

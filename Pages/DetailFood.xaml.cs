@@ -17,6 +17,7 @@ using System.Net;
 using System.Net.Http;
 using Newtonsoft.Json;
 using Nhom1.Services;
+using Nhom1.Dao.Impl;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -28,6 +29,7 @@ namespace Nhom1.Pages
     public sealed partial class Collection : Page
     {
         Nullable<int> foodId ;
+        static FoodDetail food ;
         public Collection()
         {
             this.InitializeComponent();
@@ -49,11 +51,30 @@ namespace Nhom1.Pages
         {
             List<Food> lsFoods = new List<Food>();
             DetailService service = new DetailService();
-            FoodDetail food = await service.getFoodDetail(id);
+            food = await service.getFoodDetail(id);
+                
             System.Diagnostics.Debug.WriteLine("foodId in service : " + food.data.id +"---"+food.data.name);
             lsFoods.Add(food.data);
             MNItems.ItemsSource = lsFoods;
           
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+            Cart cart = new Cart();
+            CartItem item = new CartItem(food.data.id, food.data.name, food.data.image, food.data.price, 1);
+            if(cart.checkItemExist(item))
+            {
+                cart.UpdateCart(item, cart.getItemById(item.id).qty + 1);
+            }else{
+                cart.AddToCart(item); 
+            }
+
+            // cart.checkItemExist(item) ? cart.UpdateCart(item, cart.getItemById(item.id).qty + 1) : cart.AddToCart(item);
+
+
+
         }
     }
 }

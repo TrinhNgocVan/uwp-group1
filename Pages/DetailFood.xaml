@@ -64,15 +64,15 @@
                                             <TextBlock FontSize="30" Foreground="Orange" HorizontalAlignment="Left" Text="Only" Margin="100,0,0,-20"/>
                                             <RelativePanel>
                                                 <TextBlock x:Name="Unit" Foreground="Yellow" Text="$" FontSize="100" FontWeight="Medium" Margin="100,0,0,0" />
-                                                <TextBlock RelativePanel.RightOf="Unit" Foreground="Yellow" Text="{x:Bind price}" FontSize="100" FontWeight="Medium" Margin="0,0,0,0" />
+                                                <TextBlock x:Name="Price" RelativePanel.RightOf="Unit" Foreground="Yellow" Text="{x:Bind price}" FontSize="100" FontWeight="Medium" Margin="0,0,0,0" />
                                             </RelativePanel>
-                                            <TextBlock Foreground="Black" Text="{x:Bind name}" FontSize="40" Margin="100,0,0,-20"  TextWrapping="Wrap"/>
+                                            <TextBlock x:Name="foodName" Foreground="Black" Text="{x:Bind name}" FontSize="40" Margin="100,0,0,-20"  TextWrapping="Wrap"/>
                                             <TextBlock Foreground="Yellow" Text="{x:Bind description}" FontSize="30" />
-                                            <Button Foreground="White" Content="Order Now " FontSize="25" 
+                                            <Button Foreground="White" Content="Add to Cart" FontSize="25" 
                                                     Width="250" Margin="150 ,50,0,0"
-                                                    HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="Green"/>
+                                                    HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="Green" Click="Button_Click" />
                                         </StackPanel>
-                                        <Image Grid.Column="1" x:Name="imgIcon" Source="{x:Bind image}" Width="500" Height="500" Margin="100,-50,0,0"/>
+                                        <Image  Grid.Column="1" x:Name="imgIcon" Source="{x:Bind image}" Width="500" Height="500" Margin="100,-50,0,0"/>
                                     </Grid>
                                    
                                     

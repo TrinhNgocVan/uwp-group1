@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Nhom1.Models;
 
-namespace Nhom1.Services
+namespace Nhom1.Dao
 {
     interface CartService
     {

@@ -1,1 +1,1 @@
-C:\Users\admin\Desktop\Nhom1\Nhom1.csproj;x86
+E:\uwp-group1\Nhom1.csproj;x86
