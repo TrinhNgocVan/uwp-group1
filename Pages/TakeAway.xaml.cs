@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Nhom1.Dao.Impl;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -25,11 +26,13 @@ namespace Nhom1.Pages
         public TakeAway()
         {
             this.InitializeComponent();
+           
         }
         protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
             string msg = e.Parameter as string;
-            Title.Text = msg;
+            OrderHistoryImpl obj = new OrderHistoryImpl() ;
+            MNItems.ItemsSource = obj.getOrderHistory();
         }
     }
 }

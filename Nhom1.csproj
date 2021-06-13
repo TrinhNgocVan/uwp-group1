@@ -121,6 +121,10 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Dao\FavoriteFoodSerivce.cs" />
+    <Compile Include="Dao\Impl\FavorteList.cs" />
+    <Compile Include="Dao\Impl\OrderHistoryImpl.cs" />
+    <Compile Include="Dao\OrderHistoryDao.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -132,6 +136,7 @@
     <Compile Include="Models\HomePage.cs" />
     <Compile Include="Models\Menu.cs" />
     <Compile Include="Models\MenuItem.cs" />
+    <Compile Include="Models\OrderHistory.cs" />
     <Compile Include="Pages\DemoFileHandle.xaml.cs">
       <DependentUpon>DemoFileHandle.xaml</DependentUpon>
     </Compile>

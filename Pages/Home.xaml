@@ -9,15 +9,15 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <StackPanel>
-        <Grid Height="150">
-            <RelativePanel x:Name="header"  Margin="5,-9,4,687" Background="White" Grid.ColumnSpan="2" Grid.Column="1"/>
-            <RelativePanel Margin="45,10,881,734" Background="#FFEA2C2C" FocusVisualPrimaryBrush="#FFEC0C0C"/>
-            <Image x:Name="logo1" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="65,22,0,0" VerticalAlignment="Top" Width="87" FocusVisualPrimaryBrush="#FFFF2D2D" Source="/Assets/logoFF.jpg" FocusVisualSecondaryBrush="#99EE2020" Grid.ColumnSpan="2"/>
-            <TextBlock x:Name="ResName" Grid.Column="1" HorizontalAlignment="Left" Margin="54,125,0,0" Text="Fast Food" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top"  FontSize="24" FontWeight="Bold" FontFamily="Century Gothic" AllowDrop="True" Width="117" Grid.ColumnSpan="2" Height="29"/>
-            <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="54,152,0,0" Text="Restaurant" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Width="119"  Grid.ColumnSpan="2" Height="32"/>
-            <TextBlock x:Name="Head"  Grid.Column="2" HorizontalAlignment="Left" Margin="200,39,0,0" Text="Today Special" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" FontFamily="Century Gothic" Width="484" Height="44"/>
-            <AppBarButton x:Name="FacebookButton" Grid.Column="2" Label="" Margin="604,39,0,0" RenderTransformOrigin="1.412,0.285" Height="44" Width="39" Background="#00000000">
+    <StackPanel Width="1500" Background="GhostWhite">
+        <Grid Height="150" x:Name="Header">
+            <RelativePanel x:Name="header"    Margin="0,-9,4,0" Background="GhostWhite" />
+            <RelativePanel Margin="0,10,10,10" Background="GhostWhite" FocusVisualPrimaryBrush="#FFEC0C0C"/>
+            <Image x:Name="logo1"  HorizontalAlignment="Left" Height="150" Margin="10,22,0,0" VerticalAlignment="Top" Width="87" FocusVisualPrimaryBrush="#FFFF2D2D" Source="/Assets/logoFF.jpg" FocusVisualSecondaryBrush="#99EE2020"/>
+            <TextBlock x:Name="ResName"  HorizontalAlignment="Left" Margin="54,125,0,0" Text="Fast Food" Foreground="Red" TextWrapping="Wrap" VerticalAlignment="Top"  FontSize="24" FontWeight="Bold" FontFamily="Century Gothic" AllowDrop="True" Width="117" Grid.ColumnSpan="2" Height="29"/>
+            <TextBlock  HorizontalAlignment="Left" Margin="54,152,0,0" Text="Restaurant" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Width="119"  Grid.ColumnSpan="2" Height="32"/>
+            <TextBlock x:Name="Head"   HorizontalAlignment="Left" Margin="150,20,0,0" FontWeight="ExtraLight" Text="Today Special" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="50" FontFamily="Century Gothic" Width="484" Height="55"/>
+            <AppBarButton x:Name="FacebookButton"  Label="" Margin="604,39,0,0" RenderTransformOrigin="1.412,0.285" Height="80" Width="60" Background="#00000000">
                 <AppBarButton.Icon>
                     <BitmapIcon UriSource="/Assets/facebook_64px.png" Height="575883" Width="909255" />
                 </AppBarButton.Icon>
@@ -44,22 +44,54 @@
                 </AppBarButton.Icon>
             </AppBarButton>
         </Grid>
-        <RelativePanel Margin="9,50,-2,31" Grid.ColumnSpan="2" Grid.Column="1">
-            <Grid>
-                <ListView x:Name="MNItems">
-                    <ListView.ItemTemplate>
-                        <DataTemplate x:DataType="models:HomepageData">
-                            <ListViewItem Tag="{x:Bind id}"  Tapped="ListViewItem_Tapped">
-                               
+       
+        <RelativePanel Margin="9,50,-2,31" >
+            <TextBlock x:Name="FavoriteFoodText" Text="Your Favorite Food" FontSize="40" Margin="50,0,0,0"  />
+            <Grid RelativePanel.Below="FavoriteFoodText">
+                <GridView x:Name="FavoriteItems">
+                    <GridView.ItemTemplate>
+                        <DataTemplate x:DataType="models:CartItem">
+                            <GridViewItem Tag="{x:Bind id}"  Tapped="ListViewItem_Tapped" Width="200" Height="300">
+
+
                                 <RelativePanel>
-                                    <Image x:Name="imgIcon" Source="{x:Bind image}" Width="150" Height="150" Margin="50,0,0,0"/>
-                                    <TextBlock RelativePanel.RightOf="imgIcon" Margin="30 ,50,0,0" Text="{x:Bind name}" FontSize="30" VerticalAlignment="Center"/>
+
+                                    <Image x:Name="imgIcon"  Source="{x:Bind image}" Width="170" Height="170" Margin="30,0,0,0"/>
+                                    <TextBlock RelativePanel.Below="imgIcon" Margin="30 ,50,0,0" Text="{x:Bind name}" HorizontalAlignment="Center"
+                                               FontSize="18" VerticalAlignment="Center" TextWrapping="Wrap"/>
+                                   
                                 </RelativePanel>
-                            </ListViewItem>
+                            </GridViewItem>
                         </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
+                    </GridView.ItemTemplate>
+                </GridView>
             </Grid>
         </RelativePanel>
+        
+        <Grid>
+        <RelativePanel Margin="9,50,-2,31" >
+            <TextBlock x:Name="specialFoodText" Text="Today special" FontSize="40" Margin="50,0,0,0"  />
+            <Grid RelativePanel.Below="specialFoodText">
+                <GridView x:Name="MNItems">
+                    <GridView.ItemTemplate>
+                        <DataTemplate x:DataType="models:HomepageData">
+                            <GridViewItem Tag="{x:Bind id}"  Tapped="ListViewItem_Tapped" Width="400" Height="400">
+                               
+                                
+                               <RelativePanel>
+                                    
+                                    <Image x:Name="imgIcon"  Source="{x:Bind image}" Width="340" Height="300" Margin="50,0,0,0"/>
+                                    <TextBlock RelativePanel.Below="dolla" Margin="50 ,10,0,0" Text="{x:Bind name}" HorizontalAlignment="Center"
+                                               FontSize="20" VerticalAlignment="Center" TextWrapping="Wrap"/>
+                                    <TextBlock RelativePanel.RightOf="dolla" RelativePanel.Below ="imgIcon"  x:Name="price" Text="{x:Bind price}" Foreground="Orange" FontSize="24" />
+                                    <TextBlock RelativePanel.Below="imgIcon"  x:Name="dolla" Text="$" Foreground="Orange" FontSize="24" Margin="50,0,0,0" HorizontalAlignment="Center" />
+                                </RelativePanel>
+                            </GridViewItem>
+                        </DataTemplate>
+                    </GridView.ItemTemplate>
+                </GridView>
+            </Grid>
+        </RelativePanel>
+        </Grid>
     </StackPanel>
 </Page>

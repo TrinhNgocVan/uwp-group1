@@ -9,7 +9,8 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <StackPanel>
+    <StackPanel Width="1500">
+    
         <Grid Height="150">
             <RelativePanel x:ConnectionId='10' x:Name="header"  Margin="5,-9,4,687" Background="White" Grid.ColumnSpan="2" Grid.Column="1"/>
             <RelativePanel Margin="45,10,881,734" Background="#FFEA2C2C" FocusVisualPrimaryBrush="#FFEC0C0C"/>
@@ -64,11 +65,15 @@
             </Grid>
            
         </RelativePanel>
-        <Button x:ConnectionId='2' Foreground="White"   Content="Order Now" FontSize="25" 
+        
+        <Button x:ConnectionId='2' x:Name="orderButton" Foreground="White"   Content="Order Now" FontSize="25" 
                                                     Width="250" Margin="-900 ,30,0,0"
                                                     HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="Green"                       />
-        <TextBlock x:ConnectionId='3' x:Name="result" Text="text" FontSize="25" 
-                                                     Margin="-900 ,30,0,0" />
+     
+       
+        <TextBlock x:ConnectionId='3' x:Name="result"  FontSize="25" 
+                                                    Width="500" Margin="-900 ,30,0,0"  />
+        
     </StackPanel>
 </Page>
 

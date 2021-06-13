@@ -30,13 +30,13 @@
     <AppXManifest Include="E:\uwp-group1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-06-11T10:22:27.602</Modified>
+      <Modified>2021-06-13T12:19:09.642</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\uwp-group1\bin\x86\Debug\Nhom1.exe">
       <PackagePath>entrypoint\Nhom1.exe</PackagePath>
-      <Modified>2021-06-11T10:22:26.920</Modified>
+      <Modified>2021-06-13T12:19:08.955</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\admin\.nuget\packages\newtonsoft.json\13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -154,51 +154,51 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\uwp-group1\bin\x86\Debug\Nhom1.xr.xml">
       <PackagePath>Nhom1.xr.xml</PackagePath>
-      <Modified>2021-06-11T10:11:10.321</Modified>
+      <Modified>2021-06-13T09:05:05.777</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\uwp-group1\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-06-11T10:21:21.623</Modified>
+      <Modified>2021-06-13T12:17:48.990</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\uwp-group1\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-06-11T10:21:21.623</Modified>
+      <Modified>2021-06-13T12:17:48.990</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\uwp-group1\bin\x86\Debug\Pages\DemoFileHandle.xbf">
       <PackagePath>Pages\DemoFileHandle.xbf</PackagePath>
-      <Modified>2021-06-11T10:21:21.623</Modified>
+      <Modified>2021-06-13T12:17:48.990</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\uwp-group1\bin\x86\Debug\Pages\Category.xbf">
       <PackagePath>Pages\Category.xbf</PackagePath>
-      <Modified>2021-06-11T10:21:21.607</Modified>
+      <Modified>2021-06-13T12:17:48.969</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\uwp-group1\bin\x86\Debug\Pages\DetailFood.xbf">
       <PackagePath>Pages\DetailFood.xbf</PackagePath>
-      <Modified>2021-06-11T10:21:21.613</Modified>
+      <Modified>2021-06-13T12:17:48.974</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\uwp-group1\bin\x86\Debug\Pages\Customers.xbf">
       <PackagePath>Pages\Customers.xbf</PackagePath>
-      <Modified>2021-06-11T10:21:21.624</Modified>
+      <Modified>2021-06-13T12:17:48.991</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\uwp-group1\bin\x86\Debug\Pages\Delivery.xbf">
       <PackagePath>Pages\Delivery.xbf</PackagePath>
-      <Modified>2021-06-11T10:22:26.749</Modified>
+      <Modified>2021-06-13T12:17:48.979</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\uwp-group1\bin\x86\Debug\Pages\DriverPayment.xbf">
       <PackagePath>Pages\DriverPayment.xbf</PackagePath>
-      <Modified>2021-06-11T10:21:21.624</Modified>
+      <Modified>2021-06-13T12:17:48.991</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\uwp-group1\bin\x86\Debug\Pages\Home.xbf">
       <PackagePath>Pages\Home.xbf</PackagePath>
-      <Modified>2021-06-11T10:21:21.624</Modified>
+      <Modified>2021-06-13T12:17:48.984</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\uwp-group1\bin\x86\Debug\Pages\Layout.xbf">
       <PackagePath>Pages\Layout.xbf</PackagePath>
-      <Modified>2021-06-11T10:21:21.625</Modified>
+      <Modified>2021-06-13T12:17:48.991</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\uwp-group1\bin\x86\Debug\Pages\TakeAway.xbf">
       <PackagePath>Pages\TakeAway.xbf</PackagePath>
-      <Modified>2021-06-11T10:21:21.625</Modified>
+      <Modified>2021-06-13T12:19:08.743</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -206,11 +206,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\uwp-group1\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-06-11T09:14:52.851</Modified>
+      <Modified>2021-06-13T11:49:33.266</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\uwp-group1\bin\x86\Debug\Core\Nhom1.exe">
       <PackagePath>Nhom1.exe</PackagePath>
-      <Modified>2021-06-11T10:22:27.595</Modified>
+      <Modified>2021-06-13T12:19:09.637</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

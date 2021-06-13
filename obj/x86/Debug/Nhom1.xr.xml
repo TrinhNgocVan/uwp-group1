@@ -45,12 +45,22 @@
     </RootType>
     <RootType FullName="Nhom1.Pages.DemoFileHandle" />
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Background" />
       <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="FocusVisualPrimaryBrush" />
+      <RootMethod Name="GetRightOf" />
+      <RootMethod Name="SetRightOf" />
+      <RootMethod Name="GetBelow" />
+      <RootMethod Name="SetBelow" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="ItemTemplate" />
-      <RootProperty Name="ItemsSource" />
-      <RootProperty Name="Visibility" />
       <RootProperty Name="Margin" />
       <RootEvent Name="Loaded" />
     </RootType>
@@ -59,19 +69,8 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem">
       <RootProperty Name="Content" />
-      <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="Tag" />
       <RootEvent Name="Tapped" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
-      <RootProperty Name="Children" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="FocusVisualPrimaryBrush" />
-      <RootMethod Name="GetRightOf" />
-      <RootMethod Name="SetRightOf" />
-      <RootMethod Name="GetBelow" />
-      <RootMethod Name="SetBelow" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Source" />
@@ -83,6 +82,11 @@
       <RootProperty Name="FocusVisualPrimaryBrush" />
       <RootProperty Name="FocusVisualSecondaryBrush" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.GridView">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="Margin" />
       <RootProperty Name="Content" />
@@ -90,10 +94,16 @@
       <RootMethod Name="SetVerticalScrollBarVisibility" />
       <RootMethod Name="GetHorizontalScrollBarVisibility" />
       <RootMethod Name="SetHorizontalScrollBarVisibility" />
-      <RootMethod Name="GetHorizontalScrollMode" />
-      <RootMethod Name="SetHorizontalScrollMode" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.GridViewItem">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="Tag" />
+      <RootProperty Name="Content" />
+      <RootEvent Name="Tapped" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
       <RootProperty Name="Label" />
       <RootProperty Name="Margin" />
@@ -125,11 +135,21 @@
     <RootType FullName="Nhom1.Pages.DriverPayment" />
     <RootType FullName="Nhom1.Pages.Home" />
     <RootType FullName="Windows.UI.Xaml.Controls.SplitView">
+      <RootProperty Name="PaneBackground" />
       <RootProperty Name="OpenPaneLength" />
+      <RootProperty Name="CompactPaneLength" />
       <RootProperty Name="DisplayMode" />
       <RootProperty Name="IsPaneOpen" />
+      <RootProperty Name="BackgroundSizing" />
+      <RootProperty Name="Opacity" />
       <RootProperty Name="Pane" />
       <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
+      <RootProperty Name="Symbol" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Foreground" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Frame" />
     <RootType FullName="Nhom1.Pages.Layout" />

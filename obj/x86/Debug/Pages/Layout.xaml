@@ -8,21 +8,26 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <SplitView OpenPaneLength="200" DisplayMode="Inline" IsPaneOpen="True">
-        <SplitView.Pane>
-            <ListView x:ConnectionId='2' x:Name="MN" Margin="10"                     >
+    <SplitView x:ConnectionId='2' x:Name="splitview"  PaneBackground="DarkCyan" OpenPaneLength="300" CompactPaneLength="60" DisplayMode="CompactInline" IsPaneOpen="true" BackgroundSizing="InnerBorderEdge" Opacity="1" >
+        <SplitView.Pane    >
+            <ListView x:ConnectionId='3' x:Name="MN" Margin="0,0,0,0"                      >
                 <ListView.ItemTemplate>
                     <DataTemplate                             >
-                        <ListViewItem x:ConnectionId='4'                             >
-                            <TextBlock x:ConnectionId='5'                     />
+                        <ListViewItem x:ConnectionId='5'                             >
+                            <RelativePanel>
+                            
+                            <SymbolIcon x:ConnectionId='6'  x:Name="icon"                        Margin="10,30,10,10"  Opacity="0.8"  Foreground="White"   />
+                               
+                               <TextBlock x:ConnectionId='7' x:Name="name" RelativePanel.RightOf="icon" Margin="10 ,20,0,10"                      FontSize="25" FontWeight="Light" Foreground="White"  />
+                            </RelativePanel>
                         </ListViewItem>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
         </SplitView.Pane>
-        <SplitView.Content>
-            <ScrollViewer Margin="10">
-                <Frame x:ConnectionId='6' x:Name="MainFrame"/>
+        <SplitView.Content >
+            <ScrollViewer Margin="0" >
+                <Frame x:ConnectionId='8' x:Name="MainFrame" />
             </ScrollViewer>
         </SplitView.Content>
     </SplitView>

@@ -8,21 +8,26 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <SplitView OpenPaneLength="200" DisplayMode="Inline" IsPaneOpen="True">
-        <SplitView.Pane>
-            <ListView x:Name="MN" Margin="10" Loaded="Menu_Loaded">
+    <SplitView x:Name="splitview"  PaneBackground="DarkCyan" OpenPaneLength="300" CompactPaneLength="60" DisplayMode="CompactInline" IsPaneOpen="true" BackgroundSizing="InnerBorderEdge" Opacity="1" >
+        <SplitView.Pane    >
+            <ListView x:Name="MN" Margin="0,0,0,0" Loaded="Menu_Loaded" >
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="models:MenuItem">
                         <ListViewItem Tapped="ListViewItem_Tapped">
-                            <TextBlock Text="{x:Bind Name}"/>
+                            <RelativePanel>
+                            
+                            <SymbolIcon  x:Name="icon" Symbol="{x:Bind icon}" Margin="10,30,10,10"  Opacity="0.8"  Foreground="White"   />
+                               
+                               <TextBlock x:Name="name" RelativePanel.RightOf="icon" Margin="10 ,20,0,10" Text="{x:Bind Name}" FontSize="25" FontWeight="Light" Foreground="White"  />
+                            </RelativePanel>
                         </ListViewItem>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
         </SplitView.Pane>
-        <SplitView.Content>
-            <ScrollViewer Margin="10">
-                <Frame x:Name="MainFrame"/>
+        <SplitView.Content >
+            <ScrollViewer Margin="0" >
+                <Frame x:Name="MainFrame" />
             </ScrollViewer>
         </SplitView.Content>
     </SplitView>

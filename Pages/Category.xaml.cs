@@ -55,7 +55,7 @@ namespace Nhom1.Pages
 
         private void ListViewItem_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            var foodId = (int)  ((ListViewItem)sender).Tag ;
+            var foodId = (int)  ((GridViewItem)sender).Tag ;
             System.Diagnostics.Debug.WriteLine("foodId :"+foodId);
             Layout.staticFrame.Navigate(typeof(Pages.Collection), foodId);
         }

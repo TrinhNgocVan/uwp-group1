@@ -10,5 +10,6 @@ namespace Nhom1.Models
     {
         public string Name { get; set; }
         public string MenuPage { get; set; }
+        public string icon { get; set; }
     }
 }

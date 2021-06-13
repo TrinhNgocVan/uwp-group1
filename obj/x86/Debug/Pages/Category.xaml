@@ -8,76 +8,83 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <StackPanel >
+    <StackPanel Width="1500" Background="GhostWhite" >
         <Grid Height="150">
-            <RelativePanel x:ConnectionId='13' x:Name="header"  Margin="5,-9,4,687" Background="White" Grid.ColumnSpan="2" Grid.Column="1"/>
-            <RelativePanel Margin="45,10,881,734" Background="#FFEA2C2C" FocusVisualPrimaryBrush="#FFEC0C0C"/>
-            <Image x:ConnectionId='14' x:Name="logo1" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="65,22,0,0" VerticalAlignment="Top" Width="87" FocusVisualPrimaryBrush="#FFFF2D2D" Source="/Assets/logoFF.jpg" FocusVisualSecondaryBrush="#99EE2020" Grid.ColumnSpan="2"/>
-            <TextBlock x:ConnectionId='15' x:Name="ResName" Grid.Column="1" HorizontalAlignment="Left" Margin="54,125,0,0" Text="Fast Food" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top"  FontSize="24" FontWeight="Bold" FontFamily="Century Gothic" AllowDrop="True" Width="117" Grid.ColumnSpan="2" Height="29"/>
-            <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="54,152,0,0" Text="Restaurant" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Width="119"  Grid.ColumnSpan="2" Height="32"/>
-            <TextBlock x:ConnectionId='16' x:Name="Head"  Grid.Column="2" HorizontalAlignment="Left" Margin="200,39,0,0" Text="Category" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" FontFamily="Century Gothic" Width="484" Height="44"/>
-            <AppBarButton x:ConnectionId='17' x:Name="FacebookButton" Grid.Column="2" Label="" Margin="604,39,0,0" RenderTransformOrigin="1.412,0.285" Height="44" Width="39" Background="#00000000">
+            <RelativePanel x:ConnectionId='15' x:Name="header"  Margin="0,-9,4,0" Background="GhostWhite" />
+            <RelativePanel Margin="0,10,10,10" Background="GhostWhite" FocusVisualPrimaryBrush="#FFEC0C0C"/>
+            <Image x:ConnectionId='16' x:Name="logo1"  HorizontalAlignment="Left" Height="150" Margin="10,22,0,0" VerticalAlignment="Top" Width="87" FocusVisualPrimaryBrush="#FFFF2D2D" Source="/Assets/logoFF.jpg" FocusVisualSecondaryBrush="#99EE2020"/>
+            <TextBlock x:ConnectionId='17' x:Name="ResName"  HorizontalAlignment="Left" Margin="54,125,0,0" Text="Fast Food" Foreground="Red" TextWrapping="Wrap" VerticalAlignment="Top"  FontSize="24" FontWeight="Bold" FontFamily="Century Gothic" AllowDrop="True" Width="117" Grid.ColumnSpan="2" Height="29"/>
+            <TextBlock  HorizontalAlignment="Left" Margin="54,152,0,0" Text="Restaurant" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Width="119"  Grid.ColumnSpan="2" Height="32"/>
+            <TextBlock x:ConnectionId='18' x:Name="Head"   HorizontalAlignment="Left" Margin="150,20,0,0" FontWeight="ExtraLight" Text="Today Special" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="50" FontFamily="Century Gothic" Width="484" Height="55"/>
+            <AppBarButton x:ConnectionId='19' x:Name="FacebookButton"  Label="" Margin="604,39,0,0" RenderTransformOrigin="1.412,0.285" Height="80" Width="60" Background="#00000000">
                 <AppBarButton.Icon>
                     <BitmapIcon UriSource="/Assets/facebook_64px.png" Height="575883" Width="909255" />
                 </AppBarButton.Icon>
             </AppBarButton>
-            <AppBarButton x:ConnectionId='18' x:Name="FacebookButton_Copy" Grid.Column="2" Label="" Margin="648,39,0,0" RenderTransformOrigin="1.412,0.285" Height="44" Width="50" Background="#00000000">
+            <AppBarButton x:ConnectionId='20' x:Name="FacebookButton_Copy" Grid.Column="2" Label="" Margin="648,39,0,0" RenderTransformOrigin="1.412,0.285" Height="44" Width="50" Background="#00000000">
                 <AppBarButton.Icon>
                     <BitmapIcon UriSource="/Assets/twitter_24px.png"/>
                 </AppBarButton.Icon>
             </AppBarButton>
-            <AppBarButton x:ConnectionId='19' x:Name="FacebookButton_Copy1" Grid.Column="2" Label="" Margin="702,39,0,0" RenderTransformOrigin="1.412,0.285" Height="44" Width="51" Background="#00000000">
+            <AppBarButton x:ConnectionId='21' x:Name="FacebookButton_Copy1" Grid.Column="2" Label="" Margin="702,39,0,0" RenderTransformOrigin="1.412,0.285" Height="44" Width="51" Background="#00000000">
                 <AppBarButton.Icon>
                     <BitmapIcon UriSource="/Assets/instagram_old_32px.png"/>
                 </AppBarButton.Icon>
             </AppBarButton>
-            <AppBarButton x:ConnectionId='20' x:Name="FacebookButton_Copy2" Grid.Column="2" Label="" Margin="757,39,0,0" RenderTransformOrigin="1.412,0.285" Height="44" Width="50" Background="White">
+            <AppBarButton x:ConnectionId='22' x:Name="FacebookButton_Copy2" Grid.Column="2" Label="" Margin="757,39,0,0" RenderTransformOrigin="1.412,0.285" Height="44" Width="50" Background="White">
                 <AppBarButton.Icon>
                     <BitmapIcon UriSource="/Assets/notification_64px.png"/>
                 </AppBarButton.Icon>
             </AppBarButton>
-            <AppBarButton x:ConnectionId='21' x:Name="FacebookButton_Copy3" Grid.Column="2" Label="" Margin="817,39,0,0" RenderTransformOrigin="1.412,0.285" Height="44" Width="50" Background="#00000000" Icon="Setting"/>
-            <AppBarButton x:ConnectionId='22' x:Name="FacebookButton_Copy4" Grid.Column="2" Label="" Margin="872,39,0,0" RenderTransformOrigin="1.412,0.285" Height="44" Width="50" Background="#00000000">
+            <AppBarButton x:ConnectionId='23' x:Name="FacebookButton_Copy3" Grid.Column="2" Label="" Margin="817,39,0,0" RenderTransformOrigin="1.412,0.285" Height="44" Width="50" Background="#00000000" Icon="Setting"/>
+            <AppBarButton x:ConnectionId='24' x:Name="FacebookButton_Copy4" Grid.Column="2" Label="" Margin="872,39,0,0" RenderTransformOrigin="1.412,0.285" Height="44" Width="50" Background="#00000000">
                 <AppBarButton.Icon>
                     <BitmapIcon UriSource="/Assets/shutdown_32px.png"/>
                 </AppBarButton.Icon>
             </AppBarButton>
         </Grid>
-        <ListView x:ConnectionId='2' x:Name="MNItems">
-            <ListView.ItemTemplate>
-                <DataTemplate                                 >
-                    <ListViewItem x:ConnectionId='4'   >
+        <RelativePanel Margin="9,50,-2,31" >
+            <Grid>
+                <ListView x:ConnectionId='2' x:Name="MNItems" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate                                 >
+                            <ListViewItem x:ConnectionId='4'   >
 
-                        <RelativePanel >
-                           
-                            <Image x:ConnectionId='5' x:Name="imgIcon"                                 Width="150" Height="150" Margin="50 ,0,0,10"/>
-                            <TextBlock x:ConnectionId='6' RelativePanel.RightOf="imgIcon" Margin="50,20,0,0"                               FontSize="60"/>
-                              
-                            <ListView x:ConnectionId='7' x:Name="DetailItems" RelativePanel.Below="imgIcon"                              Visibility="Visible" 
+                                <RelativePanel >
+
+                                    <Image x:ConnectionId='5' x:Name="imgIcon"                                 Width="100" Height="100" Margin="10 ,0,0,10"/>
+                                    <TextBlock x:ConnectionId='6' RelativePanel.RightOf="imgIcon" Margin="50,20,0,0"                               FontSize="60"/>
+
+                                    <GridView x:ConnectionId='7' x:Name="DetailItems" RelativePanel.Below="imgIcon"                              Visibility="Visible" 
                                       ScrollViewer.VerticalScrollBarVisibility="Disabled"  ScrollViewer.HorizontalScrollBarVisibility="Auto"  >
-                                <ListView.ItemTemplate >
+                                        <GridView.ItemTemplate>
 
-                                    <DataTemplate                          >
-                                        <ListViewItem x:ConnectionId='9'  ScrollViewer.HorizontalScrollMode="Enabled" HorizontalContentAlignment="Center"                                                  >
-                                            <RelativePanel  >
-                                                <TextBlock x:ConnectionId='10' x:Name="foodId"                    Visibility="Collapsed"/>
-                                                <Image x:ConnectionId='11' x:Name="imgIcon"                         Width="50" Height="50" Margin="70,0,0,10"/>
-                                                <TextBlock x:ConnectionId='12' RelativePanel.RightOf="imgIcon" Margin="0,20,0,0"                      FontSize="24" Width="800" TextWrapping="Wrap"/>
+                                            <DataTemplate                          >
+                                                <GridViewItem x:ConnectionId='9'  Width="350" Height="400"   HorizontalContentAlignment="Center"                                                  >
+                                                    <RelativePanel  >
+                                                        <TextBlock x:ConnectionId='10' x:Name="foodId"                    Visibility="Collapsed"/>
+                                                        <Image x:ConnectionId='11' x:Name="imgIcon"                         Width="350" Height="300" Margin="0,0,30,10"/>
+                                                        <TextBlock x:ConnectionId='12' RelativePanel.RightOf="dolla" RelativePanel.Below ="imgIcon"  x:Name="price"                       Foreground="Orange" FontSize="24" />
+                                                        <TextBlock RelativePanel.Below="imgIcon"  x:Name="dolla" Text="$" Foreground="Orange" FontSize="24" Margin="50,0,0,0" HorizontalAlignment="Center" />
+                                                        <TextBlock x:ConnectionId='14' RelativePanel.Below="price" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="30,5,0,0" 
+                                                                                 FontSize="18"  TextWrapping="Wrap" />
 
-                                            </RelativePanel >
+                                                    </RelativePanel >
 
-                                        </ListViewItem>
-                                    </DataTemplate>
-                                </ListView.ItemTemplate>
+                                                </GridViewItem>
+                                            </DataTemplate>
+                                        </GridView.ItemTemplate>
 
-                            </ListView>
-                        </RelativePanel>
-                    </ListViewItem>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+                                    </GridView>
+                                </RelativePanel>
+                            </ListViewItem>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
 
 
-    </StackPanel>    
+            </Grid>
+        </RelativePanel>
+    </StackPanel>
 </Page>
 
