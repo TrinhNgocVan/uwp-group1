@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="TrinhNgocVan.Pages.Layout"
+    xmlns:models="using:TrinhNgocVan.Models"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TrinhNgocVan.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <SplitView x:Name="splitview"  PaneBackground="DarkCyan" OpenPaneLength="300" CompactPaneLength="60" DisplayMode="CompactInline" IsPaneOpen="true" BackgroundSizing="InnerBorderEdge" Opacity="1" >
+        <SplitView.Pane    >
+            <ListView x:Name="MN" Margin="0,0,0,0" Loaded="Menu_Loaded" >
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="models:MenuItem">
+                        <ListViewItem Tapped="ListViewItem_Tapped">
+                            <RelativePanel>
+
+                                <SymbolIcon  x:Name="icon" Symbol="{x:Bind icon}" Margin="10,30,10,10"  Opacity="0.8"  Foreground="White"   />
+
+                                <TextBlock x:Name="name" RelativePanel.RightOf="icon" Margin="10 ,20,0,10" Text="{x:Bind Name}" FontSize="25" FontWeight="Light" Foreground="White"  />
+                            </RelativePanel>
+                        </ListViewItem>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </SplitView.Pane>
+        <SplitView.Content >
+            <ScrollViewer Margin="0" >
+                <Frame x:Name="MainFrame" />
+            </ScrollViewer>
+        </SplitView.Content>
+    </SplitView>
+</Page>
